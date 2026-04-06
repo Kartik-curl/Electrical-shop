@@ -1,0 +1,370 @@
+body {
+    color: white;
+    font-family: sans-serif;
+
+
+}
+.shop_name img{
+    margin:0px;
+    width:50%;
+
+}
+
+.reach_us_paragraph {
+    color: #888888;
+
+}
+
+#social_links_heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: hsl(52, 94%, 52%);
+}
+
+.social_pages {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.social img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.visit_us,
+.call_us_at_reachus,
+.message_us {
+    margin: 0px;
+    color: #112740;
+}
+
+.fourth_page {
+    background-color: #112740;
+}
+
+#schedule_heading {
+    color: white;
+    margin: 0px;
+
+}
+
+#schedule_today {
+    margin: 0px;
+    color: #f8db13;
+}
+
+button {
+    background-color: #f8db13;
+    font-size: 17px;
+    border-radius: 12px;
+    padding: 15px 35px;
+    border: none;
+}
+
+.cards div {
+    background-color: #112740;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+
+
+}
+
+.cards div img {
+    height: 100px;
+}
+
+.cards_heading {
+    color: #f8db13;
+    font-size: 20px;
+}
+
+.contact_us_in_schedule {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.contact_us_in_schedule p {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.feedback {
+    background-color: #112740;
+    border-radius: 22px;
+}
+
+.input {
+    border-radius: 12px;
+    color: #888888;
+}
+
+nav{
+    display: flex;
+flex-direction: row;}
+nav a {
+    color: #f8db13;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+padding: 30px;;
+
+}
+
+
+
+.services_cards div {
+    border: solid white 2px;
+    border-radius: 12px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+
+.services_cards img {
+    padding-top: 30px;
+    width: 30%;
+}
+
+.services_heading {
+    margin: 0px;
+    color: #f8db13;
+    font-size: 20px;
+
+}
+
+.feedback {
+    padding: 30px 40px;
+}
+
+.feedback input {
+    width: 95%;
+    font-size: 17px;
+    background: transparent;
+    border-radius: 12px;
+    height: 22px;
+    border: solid 1px white;
+    padding: 15px;
+    color: white;
+}
+
+.feedback button {
+    font-weight: bold;
+}
+
+.feedback p {
+    font-size: 14px;
+    color: #f8db13;
+}
+
+#input_info {
+    padding-bottom: 100px;
+    margin-bottom: 40px;
+}
+
+
+.feedback input:enabled {
+    border: solid 1px #f8db13;
+}
+
+.feedback input:hover {
+    border: solid 1px #ffffff;
+}
+
+#reachus {
+    padding: 50px 50px;
+}
+
+#reach_us_heading {
+    color: #112740;
+    font-size: 52px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#reach_us_heading2 {
+    color: #f8db13;
+    font-size: 52px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.contacts {
+    margin: 0px;
+}
+
+.contacts2 {
+    margin: 0px;
+    font-size: 22px;
+}
+
+
+.schedule {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 80px 80px;
+}
+
+.call_us_in_info_on_first_page p {
+    color: #ffdd00;
+    font-size: 18px;
+    font-weight: bold;
+
+    margin: 0px;
+}
+
+h4 {
+    margin: 0px;
+}
+
+.third_page_info p {
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+
+}
+
+.fade_up {
+
+    transition: all ease 1s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.fade_left {
+    transition: all ease 1s;
+    transform: translateX(60px);
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+@media(min-width:1025px) {
+    .first_page_content {
+
+        background-image: url("/static/images/1_bg.jpg");
+        padding: 0px 80px;
+
+        height: 100vh;
+    }
+
+    .first_page {
+        background-color: #112740;
+    }
+
+    .cards {
+        padding: 80px 80px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        column-gap: 40px;
+
+
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+
+        
+    
+    }
+
+
+
+
+    #your_trusted {
+        font-size: 72px;
+        color: white;
+        font-weight: bold;
+        margin: 0px;
+
+    }
+
+    .about_in_info_text {
+        margin: 50px 0px;
+        margin-right: 40%;
+        font-size: 19px;
+    }
+
+    .learn_more_and_call_us {
+        display: flex;
+        gap: 100px;
+
+    }
+
+    .learn_more_and_call_us button {
+        font-size: 18px;
+    }
+
+
+
+
+    #third_page_heading {
+        padding-top: 100px;
+        color: white;
+        font-size: 47px;
+    }
+
+    #third_page_info_in_paragraph {
+        padding-bottom: 100px;
+        color: #f8db13;
+        font-size: 47px;
+    }
+
+
+
+
+
+    #electrical_experts {
+        color: #f8db13;
+        margin: 0px;
+        font-size: 72px;
+        font-weight: bold;
+    }
+
+    .services_cards {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 150px;
+        row-gap: 80px;
+
+    }
+
+
+
+
+    .third_page {
+        background: url("/static/images/2_bg.png");
+        padding-bottom: 80px;
+    }
+
+    .third_page_info,
+    .services_cards {
+
+        text-align: center;
+        padding: 0px 80px;
+
+    }
+
+    .feedback_and_reach_us {
+        padding: 80px 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .fourth_page {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+
+}
