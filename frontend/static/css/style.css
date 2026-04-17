@@ -4,9 +4,10 @@ body {
 
 
 }
-.shop_name img{
-    margin:0px;
-    width:50%;
+
+.shop_name img {
+    margin: 0px;
+    width: 50%;
 
 }
 
@@ -16,17 +17,21 @@ body {
 }
 
 #social_links_heading {
-    font-size: 40px;
+    text-align: center;
+    font-size: 28px;
     font-weight: bold;
     color: hsl(52, 94%, 52%);
 }
 
+
 .social_pages {
-    display: flex;
-    flex-direction: row;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-.social img{
+
+.social img {
     width: 100px;
     border-radius: 50%;
 }
@@ -39,12 +44,15 @@ body {
 }
 
 .fourth_page {
+    border-radius: 20px;
     background-color: #112740;
 }
 
 #schedule_heading {
     color: white;
     margin: 0px;
+    font-size: 36px;
+    padding-bottom: 20px;
 
 }
 
@@ -62,6 +70,7 @@ button {
 }
 
 .cards div {
+
     background-color: #112740;
     border-radius: 20px;
     padding: 20px;
@@ -90,6 +99,7 @@ button {
     font-size: 18px;
 }
 
+
 .feedback {
     background-color: #112740;
     border-radius: 22px;
@@ -100,26 +110,29 @@ button {
     color: #888888;
 }
 
-nav{
+nav {
     display: flex;
-flex-direction: row;}
+    flex-direction: row;
+
+    column-gap: 15px;
+
+
+}
+
 nav a {
+    padding: 20px 0px;
     color: #f8db13;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-padding: 30px;;
+
+
+
 
 }
 
 
 
-.services_cards div {
-    border: solid white 2px;
-    border-radius: 12px;
-    background: transparent;
-    backdrop-filter: blur(5px);
-}
 
 .services_cards img {
     padding-top: 30px;
@@ -177,14 +190,14 @@ padding: 30px;;
 
 #reach_us_heading {
     color: #112740;
-    font-size: 52px;
+    font-size: 28px;
     font-weight: bold;
     margin: 0px;
 }
 
 #reach_us_heading2 {
     color: #f8db13;
-    font-size: 52px;
+    font-size: 28px;
     font-weight: bold;
     margin: 0px;
 }
@@ -224,6 +237,7 @@ h4 {
 
 }
 
+
 .fade_up {
 
     transition: all ease 1s;
@@ -240,6 +254,75 @@ h4 {
 .show {
     opacity: 1;
     transform: translate(0, 0);
+}
+
+.shop_name {
+    text-align: center;
+}
+
+.first_page {
+    background-color: #112740;
+}
+
+.info_on_first_page {
+    padding-top: 50px;
+
+}
+
+.cards {
+
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+
+
+
+}
+
+#your_trusted {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    margin: 0px;
+}
+
+
+#electrical_experts {
+    text-align: center;
+    color: #f8db13;
+    margin: 0px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.services_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    text-align:center;
+    padding-bottom:50px;
+
+}
+
+.services_cards div {
+    background-color: #112740;
+    border-radius: 15px;
+}
+
+#third_page_info_in_paragraph {
+    padding-bottom: 20px;
+    color: #c0a80e;
+    font-size: 24px;
+}
+
+#third_page_heading {
+    padding-top: 20px;
+    color: #112740;
+    font-size: 24px;
 }
 
 @media(min-width:1025px) {
@@ -266,24 +349,72 @@ h4 {
 
     }
 
+    .shop_name {
+        text-align: start;
+    }
+
     .header {
         display: flex;
         flex-direction: row;
 
-        
+
+
+    }
+    nav a {
+        padding: 35px 0px;
+
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        column-gap:80px;
+    }
+    #reach_us_heading {
+    color: #112740;
+    font-size: 52px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#reach_us_heading2 {
+    color: #f8db13;
+    font-size: 52px;
+    font-weight: bold;
+    margin: 0px;
+}
     
+.social_pages {
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+    #social_links_heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: hsl(52, 94%, 52%);
+}
+
+
+
+    .services_cards div {
+        border: solid white 2px;
+        border-radius: 12px;
+        background: transparent;
+        backdrop-filter: blur(5px);
     }
 
 
-
-
     #your_trusted {
+        text-align:start;
         font-size: 72px;
         color: white;
         font-weight: bold;
         margin: 0px;
 
     }
+
+
 
     .about_in_info_text {
         margin: 50px 0px;
@@ -321,6 +452,7 @@ h4 {
 
 
     #electrical_experts {
+        text-align: start;
         color: #f8db13;
         margin: 0px;
         font-size: 72px;
@@ -364,7 +496,10 @@ h4 {
         flex-direction: row;
 
     }
+}
 
-
-
+.learn_more_and_call_us {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
 }

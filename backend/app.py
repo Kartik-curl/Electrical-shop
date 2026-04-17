@@ -1,5 +1,5 @@
 from flask import render_template,Flask
-app = Flask(__name__)
+app = Flask(__name__,template_folder="../frontend/templates",static_folder="../frontend/static")
 @app.route("/")
 def home():
     return render_template("index.html")
