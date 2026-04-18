@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thakur Electricals</title>
     <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
 </head>
 
 <body>
     <div class="first_page">
         <div class="header">
-            <div class="shop_name fade_up"><img src="{{url_for('static',filename='images/logo.png')}}" alt="image not found"></div>
+            <div class="shop_name fade_up"><img src="{{url_for('static',filename='images/logo.png')}}"
+                    alt="image not found"></div>
             <div class="options">
                 <nav class="fade_left">
                     <a href="">Home</a>
-                    <a href="">Services</a>
-                    <a href="">About Us</a>
-                    <a href="">Pages</a>
-                    <a href="">Contact</a>
+                    <a href="#services_cards">Services</a>
+                    <a href="#reach_us">About Us</a>
+                    <a href="#cards">Pages</a>
+                    <a href="#social_links">Contact</a>
                 </nav>
             </div>
-         
+
         </div>
         <div class="first_page_content">
             <div class="info_on_first_page fade_up">
@@ -38,14 +39,19 @@
                     <button class="learn_more_on_first_page">Learn More</button>
                     <div class="call_us_in_info_on_first_page">
                         <p>Call Us</p>
-                        <h4 style="color:beige">1251563-12-1</h4>
+                        <h4 style="color:beige">+91 98828 63244</h4>
                     </div>
                 </div>
+            </div>
+            <div class="owner_details fade_left">
+                <img src="{{url_for('static',filename = 'images/owner.jpg')}}">
+                <h3>Mr. ParamJeet Thakur</h3>
+                <p>The Owner</p>
             </div>
 
         </div>
     </div>
-    <div class="cards fade_up">
+    <div class="cards fade_up" id="cards">
         <div class="first_card"> <img src="{{url_for('static',filename='images/safe_power_always.png')}}" alt="">
             <p class="cards_heading">Safe Power Always</p>
             <p class="about_cards">Guaranteed safety in every electrical installation.</p>
@@ -54,7 +60,8 @@
             <p class="cards_heading">Reliable Energy Supply</p>
             <p class="about_cards">Stable power flow for daily living needs.</p>
         </div>
-        <div class="third_card"> <img src="{{url_for('static',filename='images/expert_electrical_solution.png')}}" alt="">
+        <div class="third_card"> <img src="{{url_for('static',filename='images/expert_electrical_solution.png')}}"
+                alt="">
             <p class="cards_heading">Expert Electrical Solutions</p>
             <p class="about_cards">Quick, precise fixes for
                 complex issues.</p>
@@ -71,12 +78,14 @@
             <p id="third_page_info_in_paragraph" class="fade_left">Lasting Results</p>
 
         </div>
-        <div class="services_cards fade_up">
-            <div class="first_card"><img src="{{url_for('static',filename='images/residential_electrical_solution.png')}}" alt="">
+        <div class="services_cards fade_up" id="services_cards">
+            <div class="first_card"><img
+                    src="{{url_for('static',filename='images/residential_electrical_solution.png')}}" alt="">
                 <p class="services_heading">Residential Electrical Solutions</p>
                 <p class="services_info">Safe And Reliable System for Every Home</p>
             </div>
-            <div class="second_card"><img src="{{url_for('static',filename='images/commercial_electrical_powers.png')}}" alt="">
+            <div class="second_card"><img src="{{url_for('static',filename='images/commercial_electrical_powers.png')}}"
+                    alt="">
                 <p class="services_heading">Commercial Electrical Power Services</p>
                 <p class="services_info">Efficient Energy support for business operations.</p>
             </div>
@@ -84,22 +93,25 @@
                 <p class="services_heading">Industrial Electrical Installations</p>
                 <p class="services_info">Durable systems build for heavy demands.</p>
             </div>
-            <div class="fourth_card"><img src="{{url_for('static',filename='images/emergency_electrical_repair.png')}}" alt="">
+            <div class="fourth_card"><img src="{{url_for('static',filename='images/emergency_electrical_repair.png')}}"
+                    alt="">
                 <p class="services_heading">Emergency Electrical Repair Services</p>
                 <p class="services_info">Fast response ensuring uninterrupted electricity anytime.</p>
             </div>
-            <div class="fifth_card"><img src="{{url_for('static',filename='images/smart_home_electrical_automation.png')}}" alt="">
+            <div class="fifth_card"><img
+                    src="{{url_for('static',filename='images/smart_home_electrical_automation.png')}}" alt="">
                 <p class="services_heading">Smart Home Electrical Automation</p>
                 <p class="services_info">Modern control bringing comfort and efficiency.</p>
             </div>
-            <div class="sixth_card"><img src="{{url_for('static',filename='images/sustainable_energy_saving.png')}}" alt="">
+            <div class="sixth_card"><img src="{{url_for('static',filename='images/sustainable_energy_saving.png')}}"
+                    alt="">
                 <p class="services_heading">Sustainable Energy Saving Solutions</p>
                 <p class="services_info">Innovative designs reducing long -term power costs.</p>
             </div>
 
         </div>
     </div>
-    <div class="feedback_and_reach_us">
+    <div class="feedback_and_reach_us" id="reach_us">
         <div class="feedback fade_up">
 
             <p class="customer_info">Name*</p>
@@ -121,15 +133,15 @@
             </p>
             <div class="visit_us"><img src="" alt="">
                 <p class="contacts">Visit Us</p>
-                <p class="contacts2">sundernagar,mandi,hp</p>
+                <p class="contacts2">Swarghat, Bilaspur, Himachal Pradesh</p>
             </div>
             <div class="call_us_at_reachus"><img src="" alt="">
                 <p class="contacts">Call Us</p>
-                <p class="contacts2">12255-41221</p>
+                <p class="contacts2">098828 63244</p>
             </div>
             <div class="message_us"><img src="" alt="">
                 <p class="contacts">Message Us</p>
-                <p class="contacts2">hello@domainsite.com</p>
+                <p class="contacts2">thakurparamjeet200@gmail.com</p>
             </div>
         </div>
 
@@ -141,20 +153,24 @@
             </p>
             <p class="fade_left" id="schedule_today">Schedule Your Consultation Today.</p>
             <div class="contact_us_in_schedule">
-                <p>Contact us!</p>
-                <p>12211212-122152</p>
+                <p>Contact us !</p>
+                <p>+91 7018802657</p>
+                <p>thakurparamjeet200@gmail.com</p>
             </div>
         </div>
-        <div class="social_links">
+        <div class="social_links" id="social_links">
             <p id="social_links_heading" class="fade_left">Follow Us On</p>
             <div class="social_pages">
-                <div class="social fade_up"><a href=""><img src="{{url_for('static',filename='images/facebook_logo.jpg')}}" alt=""></a>
+                <div class="social fade_up"><a href=""><img class="btn"
+                            src="{{url_for('static',filename='images/facebook_logo.jpg')}}" alt=""></a>
                     <p>Facebook</p>
                 </div>
-                <div class="social fade_up"><a href=""><img src="{{url_for('static',filename='images/twiiter_logo.jpg')}}" alt=""></a>
+                <div class="social fade_up"><a href=""><img class="btn"
+                            src="{{url_for('static',filename='images/twiiter_logo.jpg')}}" alt=""></a>
                     <p>Twitter</p>
                 </div>
-                <div class="social fade_up"><a href=""><img src="{{url_for('static',filename='images/instagram_logo.jpg')}}" alt=""></a>
+                <div class="social fade_up"><a href="https://www.instagram.com/thakurparamjeet200"><img class="btn"
+                            src="{{url_for('static',filename='images/instagram_logo.jpg')}}" alt=""></a>
                     <p>Instagram</p>
                 </div>
             </div>

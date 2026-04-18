@@ -1,8 +1,9 @@
 body {
     color: white;
     font-family: sans-serif;
-
-
+}
+html,body{
+    overflow-x: hidden;
 }
 
 .shop_name img {
@@ -79,6 +80,7 @@ button {
 
 }
 
+
 .cards div img {
     height: 100px;
 }
@@ -131,7 +133,16 @@ nav a {
 
 }
 
+button,
+.btn {
+    transition: all ease 0.4s;
+}
 
+button:hover,
+.btn:hover {
+
+    transform: scale(1.2);
+}
 
 
 .services_cards img {
@@ -216,6 +227,20 @@ nav a {
     font-size: 40px;
     font-weight: bold;
     padding: 80px 80px;
+}
+
+.owner_details h3 {
+    color: rgb(239, 235, 235);
+    text-align: center;
+}
+
+.owner_details p {
+    text-align: center;
+    color: #ffdd00;
+    font-size: 22px;
+    font-weight: bold;
+
+    margin: 0px;
 }
 
 .call_us_in_info_on_first_page p {
@@ -303,8 +328,8 @@ h4 {
     grid-template-columns: 1fr 1fr;
     row-gap: 20px;
     column-gap: 20px;
-    text-align:center;
-    padding-bottom:50px;
+    text-align: center;
+    padding-bottom: 50px;
 
 }
 
@@ -325,6 +350,20 @@ h4 {
     font-size: 24px;
 }
 
+.owner_details img {
+    border-radius: 25px;
+    border: rgb(108, 106, 106) 2px solid;
+    width: 60%;
+}
+
+.owner_details {
+    text-align: center;
+
+    align-content: center;
+    justify-items: center;
+
+}
+
 @media(min-width:1025px) {
     .first_page_content {
 
@@ -332,6 +371,16 @@ h4 {
         padding: 0px 80px;
 
         height: 100vh;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        border: solid black 2px;
+    }
+
+    .owner_details {
+
+        align-content: center;
+        justify-items: center;
+
     }
 
     .first_page {
@@ -360,40 +409,50 @@ h4 {
 
 
     }
+
     nav a {
         padding: 35px 0px;
 
     }
+
     nav {
         display: flex;
         flex-direction: row;
-        column-gap:80px;
+        column-gap: 80px;
     }
+
     #reach_us_heading {
-    color: #112740;
-    font-size: 52px;
-    font-weight: bold;
-    margin: 0px;
-}
+        color: #112740;
+        font-size: 52px;
+        font-weight: bold;
+        margin: 0px;
+    }
 
-#reach_us_heading2 {
-    color: #f8db13;
-    font-size: 52px;
-    font-weight: bold;
-    margin: 0px;
-}
-    
-.social_pages {
+    .owner_details img {
+        border-radius: 25px;
+        border: rgb(108, 106, 106) 2px solid;
+        width: 60%;
+    }
 
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
+    #reach_us_heading2 {
+        color: #f8db13;
+        font-size: 52px;
+        font-weight: bold;
+        margin: 0px;
+    }
+
+    .social_pages {
+
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
     #social_links_heading {
-    font-size: 40px;
-    font-weight: bold;
-    color: hsl(52, 94%, 52%);
-}
+        font-size: 40px;
+        font-weight: bold;
+        color: hsl(52, 94%, 52%);
+    }
 
 
 
@@ -406,7 +465,7 @@ h4 {
 
 
     #your_trusted {
-        text-align:start;
+        text-align: start;
         font-size: 72px;
         color: white;
         font-weight: bold;
